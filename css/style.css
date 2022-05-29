@@ -62,6 +62,8 @@ body {
 }
 .service__menu {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .service__link {
     margin-left: 20px;
@@ -90,6 +92,21 @@ body {
 .nav a {
     color: var(--colorText);
 }
+
+.nav__burger i {
+    padding: 22px 14px;
+    display: inline-block;
+    font-size: 40px;
+    line-height: 20px;
+    display: none;
+}
+.nav__burger {
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--colorText);
+}
+
 .nav__content {
     display: flex;
     justify-content: space-between;
@@ -184,6 +201,7 @@ body {
 }
 .tab__menu {
     display: flex;
+    flex-wrap: wrap;
 }
 .tab__link {
     display: block;

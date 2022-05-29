@@ -1,0 +1,175 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (max-width: 1100px) {
+    .product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+    }
+    .card__title {
+        grid-column: span 2;
+    }
+    .card__box {
+        grid-row: 2;
+    }
+    .card .card__title {
+        text-align: center;
+    }
+    .card__desc {
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .nav__burger i {
+        display: inline-block;
+    }
+    .nav__burger:focus ~ .menu {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        min-width: 200px;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .menu {
+        display: none;
+    }
+    .menu__link {
+        width: 100%;
+        margin-left: 0;
+    }
+    .nav__content {
+        position: relative;
+    }
+    .header__title {
+        font-size: 60px;
+    }
+    .header__subtitle {
+        font-size: 30px;
+    }
+    .header__price {
+        font-size: 40px;
+        line-height: 0.8;
+        padding: 30px 45px;
+    }
+}
+@media (max-width: 960px) {
+    .card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card__title {
+        grid-column: span 1;
+    }
+    .card__box {
+        grid-row: 1;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .header__box {
+        flex-direction: column;
+    }
+    .header {
+        text-align: center;
+    }
+    .header__price {
+        margin-bottom: 30px;
+    }
+    .map__title {
+        font-size: 35px;
+    }
+}
+@media (max-width: 576px) {
+    .product {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+    }
+    .card__title {
+        grid-column: span 2;
+    }
+    .card__box {
+        grid-row: 2;
+    }
+    .card .card__title {
+        text-align: center;
+    }
+    .card__desc {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .about__title {
+        font-size: 45px;
+    }
+}
+@media (max-width: 540px) {
+    .container {
+        max-width: 540px;
+    }
+    .service {
+        flex-direction: column;
+    }
+    .service__link {
+        display: inline-block;
+        margin: 15px 10px;
+    }
+    .logo {
+        font-size: 20px;
+        line-height: 0.9;
+    }
+    .header__title {
+        font-size: 42px;
+    }
+    .header__desc {
+        font-size: 16px;
+    }
+    .tab__menu {
+        justify-content: center;
+    }
+}
+@media (max-width:520px) {
+    .footer__content {
+        flex-direction: column;
+    }
+    .footer__call {
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .footer__menu {
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    .footer__link {
+        margin: 10px;
+    }
+    .practice {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 480px) {
+    .card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card__title {
+        grid-column: span 1;
+    }
+    .card__box {
+        grid-row: 1;
+    }
+}
